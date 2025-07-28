@@ -1,69 +1,51 @@
-#  MERN Base Project - Admin & User Roles (Vite + Tailwind)
+⚡ Dự Án Thuê/Mua Xe Máy Điện Thông Minh
+🚀 Giới thiệu
+Dự án này là một nền tảng web/mobile hỗ trợ thuê hoặc mua xe máy điện, đồng thời tích hợp Google Maps để:
 
-Một project base hiện đại sử dụng **MERN stack** (MongoDB, Express, React, Node.js) kết hợp với **Vite** và **TailwindCSS**, có cấu trúc chuẩn và sẵn sàng mở rộng.  
-Phù hợp cho các hệ thống web như: quản trị người dùng, đặt lịch dịch vụ, e-commerce, dashboard,...
+Hiển thị vị trí các trạm sạc điện gần nhất
 
----
+Gợi ý lộ trình di chuyển tối ưu
 
-## Cấu trúc dự án
+Hỗ trợ người dùng dễ dàng tìm kiếm, đặt thuê hoặc mua xe
 
-```bash
-Project_Base_MERN/
-├── be/                         # Backend: Express + MongoDB
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   └── server.js
-│
-├── fe/                         # Frontend: React + Vite + Tailwind
-│   ├── layouts/                # AdminLayout, MainLayout, AuthLayout
-│   ├── views/
-│   │   ├── admin/              # Giao diện admin
-│   │   ├── user/               # Giao diện người dùng
-│   │   └── auth/               # Đăng nhập / Đăng ký
-│   ├── routes/                 # AppRoutes.jsx - cấu hình route theo layout
-│   ├── services/               # Axios service
-│   ├── context/                # AuthContext
-│   └── hooks/                  # Custom hook (useAuth,...)
+Mục tiêu chính là thúc đẩy phương tiện xanh và cung cấp trải nghiệm số hóa toàn diện cho người dùng có nhu cầu di chuyển bằng xe điện.
 
----
+🧩 Các tính năng chính
+🔍 Tìm kiếm và đặt xe (thuê hoặc mua)
 
-##  Tech Stack
+📍 Tích hợp Google Maps
 
-- Frontend:
-  - [React.js](https://reactjs.org/)
-  - [Vite](https://vitejs.dev/)
-  - [TailwindCSS](https://tailwindcss.com/)
-  - React Router v6
-  - Axios
+Hiển thị trạm sạc điện theo vị trí thực tế
 
-- Backend:
-  - Express.js
-  - MongoDB + Mongoose
-  - JWT Authentication
-  - dotenv, bcryptjs, cors, etc.
+Chỉ đường đến trạm sạc gần nhất
 
----
+⚡ Quản lý trạm sạc (dành cho admin hoặc nhà cung cấp)
 
-##  Tính năng nổi bật
+🛵 Thông tin xe máy điện: mô tả, giá, pin, tốc độ,...
 
- Giao diện tách biệt: User / Admin  
- Layouts quản lý rõ ràng  
- Auth login/register (JWT)  
- React Context API lưu trạng thái đăng nhập  
- Routing phân quyền (Private + Role-based)  
- Axios cấu hình baseURL  
- TailwindCSS cho giao diện responsive  
- Cấu trúc dễ mở rộng & tái sử dụng
+🧾 Lịch sử giao dịch và đơn hàng
 
----
+🔒 Đăng ký / Đăng nhập / Xác thực tài khoản
 
-##  Cài đặt
+📱 Responsive giao diện (Web/mobile)
 
-### 1. Clone project
+🛠️ Công nghệ sử dụng
+Frontend: ReactJS / React Native / TailwindCSS
 
-```bash
-git clone https://github.com/DUDISoftware/Project_Base
+Backend: Node.js + Express
+
+Database: MongoDB / PostgreSQL
+
+Tích hợp: Google Maps API, Firebase Auth (nếu dùng)
+
+Cloud: Cloudinary / Firebase Storage (quản lý ảnh xe)
+
+📌 Mục tiêu mở rộng
+Hệ thống tính phí thuê theo thời gian thực
+
+Hệ thống đánh giá/feedback cho xe và trạm sạc
+
+Gợi ý trạm sạc còn trống theo thời gian thực
+
+Quản lý bảo trì xe điện
 
